@@ -12,6 +12,9 @@
       "redux/*": [
         "./app/redux/*"
       ],
+      "store/*": [
+        "./app/store/*"
+      ],
       "config/*": [
         "./app/config/*"
       ],

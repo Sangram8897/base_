@@ -26,6 +26,9 @@
       "root/*": [
         "./app/root/*"
       ],
+      "store/*": [
+        "./app/store/*"
+      ],
     }
   }
 }

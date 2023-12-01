@@ -8,6 +8,7 @@ module.exports = {
       "components": "./app/components",
       "containers": "./app/containers",
       "redux": "./app/redux",
+      "store": "./app/store",
       "config": "./app/config",
       "hooks": "./app/hooks",
       "appearance": "./app/appearance",
