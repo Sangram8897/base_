@@ -1,5 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Header from 'components/index'
 
 export const FontSize = [
   12,
@@ -22,6 +23,7 @@ export const FontSize = [
 const HomeScreen = () => {
   return (
     <View>
+      <Header/>
       <FlatList
         data={FontSize}
         renderItem={({ item, index }) => <View
