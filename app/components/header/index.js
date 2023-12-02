@@ -1,3 +1,4 @@
+import { HeaderHeight } from 'appearance/constants';
 import Colors from 'appearance/theme/colors';
 import React from 'react'
 import { View, Text } from 'react-native'
@@ -19,7 +20,7 @@ export default function Header({
     onRightIconPress
 }) {
     return (
-        <View style={{ height: 50, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: backgroundcolor }}>
+        <View style={{ height: HeaderHeight, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: backgroundcolor }}>
             {
                 hasBackButton == true && <Icon onPress={onBackbuttonPress} name={'arrow-back'} color={'white'} size={25} style={{ alignSelf: 'center', paddingHorizontal: 8, marginTop: 4 }} />
             }
