@@ -11,7 +11,7 @@ const _headerTextStyle = {
 }
 
 export default function Header({
-    hasBackButton = true,
+    hasBackButton = false,
     onBackbuttonPress = () => { },
     backgroundcolor = Colors.COLOR_BLACK1,
     headerTitle = 'Header',

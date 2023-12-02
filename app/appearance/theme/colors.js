@@ -1,4 +1,5 @@
 export default {
+    PRIMARY:'#1E50A6',
     COLOR_GREEN: '#008000',
     COLOR_RED: '#FF0000',
 

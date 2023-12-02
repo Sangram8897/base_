@@ -41,7 +41,8 @@ const Button: React.FC<ButtonProps> = ({
         // width: '100%',
         alignSelf: 'center',
         marginVertical: 16,
-        paddingVertical: 15,
+        padding: 16,
+        
         borderWidth: borderWidth,
         borderColor: borderColor,
         overflow: 'hidden',
@@ -53,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({
     >
 
       <Text
-        style={[{ fontSize: 16, color: textColor, fontFamily: "Montserrat-ExtraBold" }, textStyle]}
+        style={[{ fontSize: 16, color: textColor, fontFamily: "DMSans-ExtraBold" }, textStyle]}
       >
         {label}
       </Text>
