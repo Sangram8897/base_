@@ -9,7 +9,7 @@ const AccountDetails = ({  }) => {
     const { themeColors } = useTheme()
   console.log('themeColors',themeColors);  
     return (
-        <View style={{ backgroundColor: themeColors.primary, alignItems: 'center' }}>
+        <View style={{ backgroundColor: themeColors.PRIMARY, alignItems: 'center' }}>
             <View style={{ marginVertical: 20, alignItems: 'center' }}>
                 <Text style={{ color: '#FFF', fontFamily: 'DMSans-Bold', fontSize: 20, }}>{'Sangram Paste'}</Text>
                 <Text style={{ color: '#FFF', fontFamily: 'DMSans-Medium', fontSize: 14 }}>{AppStrings.PROFILE_MOB} : +91 {'9021010551'}</Text>

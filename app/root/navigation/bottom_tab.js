@@ -5,11 +5,14 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Colors from 'appearance/theme/colors';
 
-import { Dashboard, Login, Account } from 'containers';
+import { Dashboard, Account } from 'containers';
+import useTheme from 'hooks/useTheme';
 
 const Tab = createBottomTabNavigator();
 
 function BottomTab() {
+  const { themeColors, Layout, Common } = useTheme()
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -28,9 +31,10 @@ function BottomTab() {
           // You can return any component that you like here!
           return <FontAwesome name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: Colors.BLUE_B1,
+        tabBarActiveTintColor: Colors.PRIMARY,
         tabBarInactiveTintColor: Colors.GRAY_G3,
         headerShown: false,
+        tabBarStyle: { backgroundColor: themeColors.header },
       })}
     >
       <Tab.Screen

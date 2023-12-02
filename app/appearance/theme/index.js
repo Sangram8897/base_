@@ -1,8 +1,8 @@
 export default {
     light: {
-        primary:'red',
-        background: '#FFFFFF',
-        card: '#F0F0F0',
+        PRIMARY:'#1E50A6',
+        background: '#F8F8F8',
+        card: '#FFFFFF',
         header: '#FFFFFF',
         button: '#008000',
         text: '#000000',
@@ -12,10 +12,10 @@ export default {
         shadow: 'rgba(0, 0, 0, 0.1)' // Light mode box shadow
     },
     dark: {
-        primary:'blue',
-        background: '#333333',
-        card: '#444444',
-        header: '#333333',
+        PRIMARY:'#1E50A6',
+        background: '#1b1b1d',
+        card: '#242526',
+        header: '#242526',
         button: '#FF0000',
         text: '#FFFFFF',
         title: '#FFFFFF',

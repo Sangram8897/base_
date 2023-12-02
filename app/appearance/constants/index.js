@@ -1,4 +1,6 @@
-export const HeaderHeight=55
+import { Platform } from "react-native"
+
+export const HeaderHeight = Platform.OS == 'android' ? 55 : 60;
 
 const tiny = 5 // 5
 const small = tiny * 2 // 10

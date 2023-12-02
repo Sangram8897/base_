@@ -16,7 +16,7 @@ const useTheme = () => {
         // Gutters: Gutters(MetricsSizes),
         Layout: Layout,
         themeColors: themeColors,
-        Common: common(themeColors, Layout),
+        Common: common(themeMode,themeColors, Layout),
     }
 
     return baseTheme

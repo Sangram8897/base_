@@ -8,20 +8,22 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { toggleTheme } from 'store/slice/themeSlice';
 import { useDispatch } from 'react-redux';
+import useTheme from 'hooks/useTheme';
 
 const AccountStatistics = ({ navigation }) => {
     const dispatch = useDispatch();
+    const { themeColors, Layout, Common } = useTheme()
 
     const handleToggleTheme = () => {
         dispatch(toggleTheme());
       };
 
     return (
-        <View style={{ flex: 1, alignItems: 'center' }}>
+        <View style={Layout.fill}>
 
             <TouchableOpacity
                 onPress={() => navigation.navigate('CreateAccount')}
-                style={styles.box}
+                style={Common.cardRow}
             >
                 <FontAwesome5 name={'user-edit'} size={20} color={'gray'} />
                 <Text style={styles.boxText}>{AppStrings.PROFILE_UPDATE}</Text>
@@ -30,7 +32,7 @@ const AccountStatistics = ({ navigation }) => {
             <TouchableOpacity
                 activeOpacity={1}
                 disabled={true}
-                style={styles.box}
+                style={Common.cardRow}
             >
                 <MaterialCommunityIcons name={'email-outline'} size={22} color={'gray'} />
                 <Text style={styles.boxText} numberOfLines={1}>{'sangrampaste8897@gmail.com'}</Text>
@@ -39,7 +41,7 @@ const AccountStatistics = ({ navigation }) => {
 
             <TouchableOpacity
                
-                style={styles.box}
+                style={Common.cardRow}
             >
                 <AntDesign name={'addfile'} size={22} color={'gray'} />
                 <Text style={styles.boxText}>{AppStrings.CREATE_TASK}</Text>
@@ -48,7 +50,7 @@ const AccountStatistics = ({ navigation }) => {
 
             <TouchableOpacity
                   onPress={handleToggleTheme}
-                style={styles.box}
+                style={Common.cardRow}
             >
                 <MaterialIcons name={'mode-night'} size={22} color={'gray'} />
                 <Text style={[styles.boxText]}>{'Toggle Mode'}</Text>
@@ -56,7 +58,7 @@ const AccountStatistics = ({ navigation }) => {
 
             <TouchableOpacity
                 //  onPress={logout}
-                style={styles.box}
+                style={Common.cardRow}
             >
                 <AntDesign name={'logout'} size={22} color={'red'} />
                 <Text style={[styles.boxText, { color: 'red' }]}>{AppStrings.LOGOUT}</Text>
