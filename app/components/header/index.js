@@ -1,5 +1,6 @@
 import { HeaderHeight } from 'appearance/constants';
 import Colors from 'appearance/theme/colors';
+import useTheme from 'hooks/useTheme';
 import React from 'react'
 import { View, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -19,6 +20,8 @@ export default function Header({
     showRightIcon,
     onRightIconPress
 }) {
+   
+
     return (
         <View style={{ height: HeaderHeight, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: backgroundcolor }}>
             {

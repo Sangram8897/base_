@@ -6,7 +6,7 @@ import LoginComp from './comp/login'
 const Login = ({ navigation }) => {
 
     const handleSubmitPress = () => {
-        navigation.navigate('BottomTab')
+       // navigation.navigate('BottomTab')
         // dispatch(loginRequest(formState.inputValues.username, formState.inputValues.password))
     };
 

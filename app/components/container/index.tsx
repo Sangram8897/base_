@@ -9,11 +9,11 @@ interface ContainerProps {
 const Container:React.FC<ContainerProps> = props => {
   return (
     <SafeAreaView style={[styles.container]}>
-      <StatusBar
+      {/* <StatusBar
         animated={true}
         showHideTransition={'none'}
         barStyle={'light-content'}
-      />
+      /> */}
       <View {...props} style={styles.sub_container}>
         {props.children}
       </View>

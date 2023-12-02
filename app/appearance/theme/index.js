@@ -12,7 +12,7 @@ export default {
         shadow: 'rgba(0, 0, 0, 0.1)' // Light mode box shadow
     },
     dark: {
-        primary:'red',
+        primary:'blue',
         background: '#333333',
         card: '#444444',
         header: '#333333',

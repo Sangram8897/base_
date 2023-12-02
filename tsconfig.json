@@ -9,9 +9,6 @@
       "containers/*": [
         "./app/containers/*"
       ],
-      "redux/*": [
-        "./app/redux/*"
-      ],
       "store/*": [
         "./app/store/*"
       ],

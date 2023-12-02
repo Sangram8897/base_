@@ -8,9 +8,6 @@
       "containers/*": [
         "./app/containers/*"
       ],
-      "redux/*": [
-        "./app/redux/*"
-      ],
       "config/*": [
         "./app/config/*"
       ],

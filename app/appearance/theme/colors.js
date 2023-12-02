@@ -1,46 +1,46 @@
 export default {
     PRIMARY:'#1E50A6',
-    COLOR_GREEN: '#008000',
-    COLOR_RED: '#FF0000',
+    GREEN: '#008000',
+    RED: '#FF0000',
 
-    COLOR_WHITE1: "#FFFFFF", // White
-    COLOR_WHITE2: "#F8F8F8", // Ghost White
-    COLOR_WHITE3: "#F0F0F0", // White Smoke
+    WHITE1: "#FFFFFF", // White
+    WHITE2: "#F8F8F8", // Ghost White
+    WHITE3: "#F0F0F0", // White Smoke
 
-    COLOR_GRAY1: "#DCDCDC", // Gainsboro
-    COLOR_GRAY2: "#D3D3D3", // Light Gray
-    COLOR_GRAY3: "#C0C0C0", // Silver
-    COLOR_GRAY4: "#A9A9A9", // Dark Gray
-    COLOR_GRAY5: "#808080", // Gray
-    COLOR_GRAY6: "#696969", // Dim Gray
-    COLOR_GRAY7: "#464646",  // Charcoal
+    GRAY1: "#DCDCDC", // Gainsboro
+    GRAY2: "#D3D3D3", // Light Gray
+    GRAY3: "#C0C0C0", // Silver
+    GRAY4: "#A9A9A9", // Dark Gray
+    GRAY5: "#808080", // Gray
+    GRAY6: "#696969", // Dim Gray
+    GRAY7: "#464646",  // Charcoal
 
-    COLOR_BLACK1: "#444444", // Black
-    COLOR_BLACK2: "#333333", // Dark Black
-    COLOR_BLACK3: "#222222", // Very Dark Black
-    COLOR_BLACK4: "#111111", // Extremely Dark Black
-    COLOR_BLACK5: "#000000",  // Super Dark Black
+    BLACK1: "#444444", // Black
+    BLACK2: "#333333", // Dark Black
+    BLACK3: "#222222", // Very Dark Black
+    BLACK4: "#111111", // Extremely Dark Black
+    BLACK5: "#000000",  // Super Dark Black
 
-    COLOR_RED1: "#FFD3D3", // Light Red
-    COLOR_RED2: "#FFC0C0", // Light Coral
-    COLOR_RED3: "#FFAFAF", // Misty Rose
-    COLOR_RED4: "#FF8C8C", // Salmon
-    COLOR_RED5: "#FF6969", // Coral
-    COLOR_RED6: "#FF5050", // Dark Salmon
-    COLOR_RED7: "#FF4040", // Light Tomato
-    COLOR_RED8: "#FF3333", // Tomato
-    COLOR_RED9: "#990000",  // Dark Red
+    RED1: "#FFD3D3", // Light Red
+    RED2: "#FFC0C0", // Light Coral
+    RED3: "#FFAFAF", // Misty Rose
+    RED4: "#FF8C8C", // Salmon
+    RED5: "#FF6969", // Coral
+    RED6: "#FF5050", // Dark Salmon
+    RED7: "#FF4040", // Light Tomato
+    RED8: "#FF3333", // Tomato
+    RED9: "#990000",  // Dark Red
 
-    COLOR_BLUE1: "#D3D3FF", // Light Blue
-    COLOR_BLUE2: "#C0C0FF", // Lavender
-    COLOR_BLUE3: "#AFBFFF", // Light Steel Blue
-    COLOR_BLUE4: "#8C8CFF", // Light Slate Blue
-    COLOR_BLUE5: "#6969FF", // Cornflower Blue
-    COLOR_BLUE6: "#5050FF", // Royal Blue
-    COLOR_BLUE7: "#4040FF", // Dodger Blue
-    COLOR_BLUE8: "#3333FF", // Medium Blue
-    COLOR_BLUE9: "#0000FF", // Blue
-    COLOR_BLUE10: "#000099",  // Dark Blue
+    BLUE1: "#D3D3FF", // Light Blue
+    BLUE2: "#C0C0FF", // Lavender
+    BLUE3: "#AFBFFF", // Light Steel Blue
+    BLUE4: "#8C8CFF", // Light Slate Blue
+    BLUE5: "#6969FF", // Cornflower Blue
+    BLUE6: "#5050FF", // Royal Blue
+    BLUE7: "#4040FF", // Dodger Blue
+    BLUE8: "#3333FF", // Medium Blue
+    BLUE9: "#0000FF", // Blue
+    BLUE10: "#000099",  // Dark Blue
 
     BACKGROUND_DARK:'',
     BACKGROUND_LIGHT:'#F0F4FA',
