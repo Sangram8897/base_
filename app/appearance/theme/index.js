@@ -1,27 +1,35 @@
 export default {
     light: {
         PRIMARY:'#1E50A6',
-        background: '#F8F8F8',
-        card: '#FFFFFF',
-        header: '#FFFFFF',
-        button: '#008000',
-        text: '#000000',
-        title: '#333333',
-        border: '#CCCCCC', // Light mode border color
-        accent: '#FFA500', // Light mode accent color
-        shadow: 'rgba(0, 0, 0, 0.1)' // Light mode box shadow
+        BACKGROUND: '#F8F8F8',
+        CARD: '#FFFFFF',
+        HEADER: '#FFFFFF',
+        BUTTON: '#008000',
+
+        TEXT: '#000000',
+        TITLE: '#333333',
+        SUB_TITLE: '#333333',
+        DECS: '#696969',
+
+        BORDER: '#CCCCCC',
+        ACCENT: '#FFA500', 
+        SHADOW: 'rgba(0, 0, 0, 0.1)',
     },
     dark: {
         PRIMARY:'#1E50A6',
-        background: '#1b1b1d',
-        card: '#242526',
-        header: '#242526',
-        button: '#FF0000',
-        text: '#FFFFFF',
-        title: '#FFFFFF',
-        border: '#666666', // Dark mode border color
-        accent: '#FFFF00', // Dark mode accent color
-        shadow: 'rgba(255, 255, 255, 0.1)' // Dark mode box shadow
+        BACKGROUND: '#1b1b1d',
+        CARD: '#242526',
+        HEADER: '#242526',
+        BUTTON: '#FF0000',
+
+        TEXT: '#000000',
+        TITLE: '#FFFFFF',
+        SUB_TITLE: '#333333',
+        DECS: '#DCDCDC',
+
+        BORDER: '#666666', 
+        ACCENT: '#FFFF00', 
+        SHADOW: 'rgba(255, 255, 255, 0.1)',
     }
 };
 

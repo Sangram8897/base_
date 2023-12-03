@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
-import Colors from 'appearance/theme/colors'
 import { AppStrings } from 'config/strings'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -12,11 +11,11 @@ import useTheme from 'hooks/useTheme';
 
 const AccountStatistics = ({ navigation }) => {
     const dispatch = useDispatch();
-    const { themeColors, Layout, Common } = useTheme()
+    const { themeColors, Gutters, Layout, Common, Fonts } = useTheme()
 
     const handleToggleTheme = () => {
         dispatch(toggleTheme());
-      };
+    };
 
     return (
         <View style={Layout.fill}>
@@ -26,7 +25,7 @@ const AccountStatistics = ({ navigation }) => {
                 style={Common.cardRow}
             >
                 <FontAwesome5 name={'user-edit'} size={20} color={'gray'} />
-                <Text style={styles.boxText}>{AppStrings.PROFILE_UPDATE}</Text>
+                <Text style={[Gutters.mediumLMargin, Common.cardDescribtionText]}>{AppStrings.PROFILE_UPDATE}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
@@ -35,33 +34,29 @@ const AccountStatistics = ({ navigation }) => {
                 style={Common.cardRow}
             >
                 <MaterialCommunityIcons name={'email-outline'} size={22} color={'gray'} />
-                <Text style={styles.boxText} numberOfLines={1}>{'sangrampaste8897@gmail.com'}</Text>
+                <Text style={[Gutters.mediumLMargin, Common.cardDescribtionText]} numberOfLines={1}>{'sangrampaste8897@gmail.com'}</Text>
             </TouchableOpacity>
 
-
             <TouchableOpacity
-               
                 style={Common.cardRow}
             >
                 <AntDesign name={'addfile'} size={22} color={'gray'} />
-                <Text style={styles.boxText}>{AppStrings.CREATE_TASK}</Text>
+                <Text style={[styles.boxText, Common.cardDescribtionText]}>{AppStrings.CREATE_TASK}</Text>
             </TouchableOpacity>
 
-
             <TouchableOpacity
-                  onPress={handleToggleTheme}
+                onPress={handleToggleTheme}
                 style={Common.cardRow}
             >
                 <MaterialIcons name={'mode-night'} size={22} color={'gray'} />
-                <Text style={[styles.boxText]}>{'Toggle Mode'}</Text>
+                <Text style={[styles.boxText, Common.cardDescribtionText]}>{'Toggle Mode'}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
-                //  onPress={logout}
                 style={Common.cardRow}
             >
                 <AntDesign name={'logout'} size={22} color={'red'} />
-                <Text style={[styles.boxText, { color: 'red' }]}>{AppStrings.LOGOUT}</Text>
+                <Text style={[styles.boxText, Common.cardDescribtionText, { color: 'red' }]}>{AppStrings.LOGOUT}</Text>
             </TouchableOpacity>
 
         </View>
@@ -80,10 +75,7 @@ const styles = StyleSheet.create({
         borderRadius: 4
     },
     boxText: {
-        fontSize: 16,
-        fontFamily: 'Poppins-Medium',
         marginLeft: 16,
-        color: Colors.BLACK
     }
 })
 

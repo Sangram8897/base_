@@ -14,31 +14,32 @@ const _headerTextStyle = {
 export default function Header({
     hasBackButton = false,
     onBackbuttonPress = () => { },
-    backgroundcolor = AppColors.COLOR_BLACK1,
+    backgroundcolor,
     headerTitle = 'Header',
     headerTextStyle = _headerTextStyle,
     showRightIcon,
     onRightIconPress
 }) {
 
-    const { themeColors, Layout, Common } = useTheme()
+    const { themeColors, Fonts, Common } = useTheme()
     return (
         <View style={[{
-            height: HeaderHeight, flexDirection: 'row', 
-            justifyContent: 'space-between', 
-            alignItems: 'center', 
-            borderBottomWidth:0.2,
-            borderBottomColor:AppColors.GRAY1,
-            backgroundColor: backgroundcolor,
+            height: HeaderHeight, flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            borderBottomWidth: 0.2,
+            borderBottomColor: AppColors.GRAY1,
+            backgroundColor: backgroundcolor || themeColors.HEADER,
         }]}>
             {
-                hasBackButton == true && <Icon onPress={onBackbuttonPress} name={'arrow-back'} color={'white'} size={25} style={{ alignSelf: 'center', paddingHorizontal: 8, marginTop: 4 }} />
+                hasBackButton == true && <Icon onPress={onBackbuttonPress} name={'arrow-back'}
+                    color={themeColors.TEXT} size={25} style={{ alignSelf: 'center', paddingHorizontal: 8, marginTop: 4 }} />
             }
             <View style={{ flex: 1, paddingHorizontal: hasBackButton == true ? 10 : 16 }}>
 
                 <Text
                     numberOfLines={1}
-                    style={[{ color: themeColors.text }, headerTextStyle]}>{headerTitle}</Text>
+                    style={[Fonts.titleSmall,{ color: themeColors.TEXT }, headerTextStyle]}>{headerTitle}</Text>
             </View>
             {/* <Icon name={'notifications'} color={'gray'} size={25} style={{ alignSelf: 'center', paddingHorizontal: 8 }} /> */}
             {showRightIcon && <Icon onPress={onRightIconPress} name={'home'} color={'white'} size={22} style={{ alignSelf: 'center', paddingHorizontal: 8 }} />}

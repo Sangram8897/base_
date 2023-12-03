@@ -34,7 +34,7 @@ function BottomTab() {
         tabBarActiveTintColor: Colors.PRIMARY,
         tabBarInactiveTintColor: Colors.GRAY_G3,
         headerShown: false,
-        tabBarStyle: { backgroundColor: themeColors.header },
+        tabBarStyle: { backgroundColor: themeColors.HEADER },
       })}
     >
       <Tab.Screen

@@ -10,7 +10,7 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps> = props => {
   const { themeColors, Layout, Common } = useTheme()
   return (
-    <View style={[Layout.fill, { backgroundColor: themeColors.header }]}>
+    <View style={[Layout.fill, { backgroundColor: themeColors.HEADER }]}>
       <SafeAreaView style={[styles.container]}>
         <StatusBar
           animated={true}

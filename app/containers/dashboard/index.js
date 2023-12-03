@@ -12,7 +12,6 @@ const Dashboard = ({ navigation }) => {
     return (
         <Container>
             <Header
-                backgroundcolor={themeColors.header}
                 headerTitle={'Dashboard'}
             />
             <View style={Common.innerContainer}>

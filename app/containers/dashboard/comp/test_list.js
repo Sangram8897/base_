@@ -43,8 +43,8 @@ const TestList = () => {
     const { themeColors, Layout, Common } = useTheme()
     const Item = ({ title }) => (
         <View style={Common.card}>
-            <Text style={[styles.title, { color: themeColors.text }]}>{title}</Text>
-            <Text style={[styles.desc, { color: themeColors.text }]}>{'A React component for displaying different types of images, including network images, static resources, temporary local images, and images from local disk, such as the camera roll.'}</Text>
+            <Text style={Common.cardTitleText}>{title}</Text>
+            <Text style={Common.cardDescribtionText}>{'A React component for displaying different types of images, including network images, static resources, temporary local images, and images from local disk, such as the camera roll.'}</Text>
         </View>
     );
 

@@ -3,7 +3,6 @@
  */
 import { StyleSheet } from 'react-native'
 import { FontSize } from 'appearance/constants'
-import colors from 'appearance/theme/colors'
 
 /**
  *
@@ -11,98 +10,98 @@ import colors from 'appearance/theme/colors'
  * @return {*}
  */
 
-export default function () {
+export default function (Colors) {
   return StyleSheet.create({
     textExtraTiny: {
       fontSize: FontSize.extraTiny,
-      color: colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     textTiny: {
       fontSize: FontSize.tiny,
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     textSmall: {
       fontSize: FontSize.small,
-      color: Colors.text,
-    //  fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+    //  fontFamily: 'DMSans-Regular'
     },
     textRegular: {
       fontSize: FontSize.regular,
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     textMedium: {
       fontSize: FontSize.medium,
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     textLarge: {
       fontSize: FontSize.large,
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
 
     subtitleSmall: {
       fontSize: FontSize.small,
       fontWeight: '500',
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     subtitleMediumSmall: {
       fontSize: FontSize.small * 1.5,
       fontWeight: '500',
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     subtitleMedium: {
       fontSize: FontSize.small * 2,
       fontWeight: '500',
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
     subtitleRegular: {
       fontSize: FontSize.regular,
       fontWeight: '500',
-      color: Colors.text,
-      fontFamily: 'Rubik-Regular'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Regular'
     },
 
     titleTiny: {
       fontSize: FontSize.tiny,
       fontWeight: 'bold',
-      color: Colors.text,
-      fontFamily: 'Rubik-Bold'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Bold'
     },
     titleSmall: {
       fontSize: FontSize.small,
       fontWeight: 'bold',
-      color: Colors.text,
-      fontFamily: 'Rubik-Bold'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Bold'
     },
     titleMediumSmall: {
       fontSize: FontSize.small * 1.5,
       fontWeight: 'bold',
-      color: Colors.text,
-      fontFamily: 'Rubik-Bold'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Bold'
     },
     titleMedium: {
       fontSize: FontSize.small * 2,
       fontWeight: 'bold',
-      color: Colors.text,
+      color: Colors.TEXT,
     },
     titleRegular: {
       fontSize: FontSize.regular * 2,
       fontWeight: 'bold',
-      color: Colors.text,
-      fontFamily: 'Rubik-Bold'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Bold'
     },
     titleLarge: {
       fontSize: FontSize.large * 2,
       fontWeight: 'bold',
-      color: Colors.text,
-      fontFamily: 'Rubik-Bold'
+      color: Colors.TEXT,
+      fontFamily: 'DMSans-Bold'
     },
 
     textCenter: {
