@@ -26,6 +26,9 @@
       "store/*": [
         "./app/store/*"
       ],
+      "types/*": [
+        "./app/types/*"
+      ],
     }
   }
 }

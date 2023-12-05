@@ -13,6 +13,7 @@ module.exports = {
       "appearance": "./app/appearance",
       "root":"./app/root",
       "utils":"./app/utils",
+      "types":"./app/types",
     }
   }],
 

@@ -1,17 +1,20 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Login, CreateAccount } from 'containers';
 
-import { Dashboard, Login, Account, CreateAccount } from 'containers';
-import BottomTab from './bottom_tab';
 import { navigationRef } from './root_navigation';
+import { RootStackParamList } from 'types/navigation';
+
+import BottomTab from './bottom_tab';
 
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const AppNavigationStack = () => {
+    //const user_data = useSelector((state: RootState) => state.auth.user);
     const user_data = false
+    
     return (
         <NavigationContainer
             ref={navigationRef}

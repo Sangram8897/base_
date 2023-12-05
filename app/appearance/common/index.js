@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
  * @return {*}
  */
-export default function (mode, themeColors, Layout, Fonts, Gutters,) {
+export default function (mode, themeColors, Layout, Fonts, Gutters) {
 
   return {
 
@@ -15,11 +15,13 @@ export default function (mode, themeColors, Layout, Fonts, Gutters,) {
       ...Layout.fill,
       backgroundColor: themeColors.BACKGROUND,
     },
-    
+
     card: {
-      marginHorizontal: 16,
-      marginVertical: 8,
-      padding: 16,
+
+      ...Gutters.extraSmallVMargin,
+      ...Gutters.regularHPadding,
+      ...Gutters.smallVPadding,
+
       borderRadius: 8,
       backgroundColor: themeColors.CARD,
       ...Platform.select({
@@ -44,6 +46,13 @@ export default function (mode, themeColors, Layout, Fonts, Gutters,) {
       borderRadius: 8,
       backgroundColor: themeColors.CARD,
     },
+
+    listView: {
+      ...Layout.fill,
+      ...Gutters.regularHMargin,
+      ...Gutters.extraSmallVPadding,
+    },
+
 
     cardTitleText: {
       ...Fonts.titleMediumSmall,

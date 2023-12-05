@@ -22,7 +22,7 @@ export default {
         HEADER: '#242526',
         BUTTON: '#FF0000',
 
-        TEXT: '#000000',
+        TEXT: '#FFFFFF',
         TITLE: '#FFFFFF',
         SUB_TITLE: '#333333',
         DECS: '#DCDCDC',

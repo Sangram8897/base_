@@ -1,14 +1,12 @@
+import { Spacer } from 'components';
 import useTheme from 'hooks/useTheme';
 import React from 'react';
 import {
-    SafeAreaView,
     View,
     FlatList,
     StyleSheet,
     Text,
-    StatusBar,
 } from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const DATA = [
     {
@@ -50,8 +48,10 @@ const TestList = () => {
 
     return (
         <FlatList
+            style={Common.listView}
             data={DATA}
             renderItem={({ item }) => <Item title={item.title} />}
+            ListFooterComponent={() => <Spacer value={'large'} />}
             keyExtractor={item => item.id}
         />
     );
@@ -59,8 +59,7 @@ const TestList = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        marginTop: StatusBar.currentHeight || 0,
+        flex: 1
     },
     item: {
         backgroundColor: '#f9c2ff',

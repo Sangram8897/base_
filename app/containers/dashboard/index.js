@@ -10,7 +10,7 @@ const Dashboard = ({ navigation }) => {
     const { themeColors, Layout, Common } = useTheme()
 
     return (
-        <Container>
+        <Container l>
             <Header
                 headerTitle={'Dashboard'}
             />
