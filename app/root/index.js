@@ -3,12 +3,15 @@ import React from 'react'
 import AppNavigationStack from './navigation'
 import { store } from '../store/configure_store'
 import { Provider } from 'react-redux'
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <AppNavigationStack />
-    </Provider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Provider store={store}>
+        <AppNavigationStack />
+      </Provider>
+    </GestureHandlerRootView>
   )
 }
 

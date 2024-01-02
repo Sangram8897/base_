@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login, CreateAccount } from 'containers';
+import { Login, CreateAccount,Revenue,Leads,Add } from 'containers';
 
 import { navigationRef } from './root_navigation';
 import { RootStackParamList } from 'types/navigation';

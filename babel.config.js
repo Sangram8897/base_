@@ -16,6 +16,6 @@ module.exports = {
       "types":"./app/types",
     }
   }],
-
+  'react-native-reanimated/plugin',
   ],
   };

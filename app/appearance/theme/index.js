@@ -1,9 +1,9 @@
 export default {
     light: {
         PRIMARY:'#1E50A6',
-        BACKGROUND: '#F8F8F8',
+        BACKGROUND: '#00308F',
         CARD: '#FFFFFF',
-        HEADER: '#FFFFFF',
+        HEADER: '#00308F',
         BUTTON: '#008000',
 
         TEXT: '#000000',
