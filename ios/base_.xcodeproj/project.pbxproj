@@ -63,7 +63,6 @@
 		59E8C5D3DF26449EB9824766 /* DMSans_18pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41DFDE99574A4316933AB31B /* DMSans_18pt-BoldItalic.ttf */; };
 		5BF2B25D8B08471B9B667CBA /* DMSans_24pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448BF1A0C88B44E197E1CD0F /* DMSans_24pt-Italic.ttf */; };
 		72A56BC752664E38B80D6A57 /* DMSans_36pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3ABBE945EB6B4BA391E8607E /* DMSans_36pt-Bold.ttf */; };
-		72A593913517A66EDE09F193 /* libPods-base_-base_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050A92D2E4DCE1AEDD631FD /* libPods-base_-base_Tests.a */; };
 		7492E5CCEB7F4522B9B513C4 /* DMSans_24pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08577DB22E324C77A96BBE60 /* DMSans_24pt-BlackItalic.ttf */; };
 		777D37D3621B4F9EB211AA7B /* DMSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 760FB08C937B4F74B89D43BA /* DMSans-SemiBoldItalic.ttf */; };
 		779CC8C24C684A08ADF2A28C /* DMSans_36pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF5939DC65D04452862E507F /* DMSans_36pt-Black.ttf */; };
@@ -100,7 +99,6 @@
 		EC203B662DE54C608E89C0D4 /* DMSans_24pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F27E866A3ADA4DB4A7695116 /* DMSans_24pt-ExtraLight.ttf */; };
 		EE16E2DF6A464C68A4276560 /* DMSans_36pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCE304C1C3949D18AE3305F /* DMSans_36pt-ExtraLightItalic.ttf */; };
 		F542E124BAAB48FF8180AF98 /* DMSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67D47AF48B284B9ABEF0E34D /* DMSans-LightItalic.ttf */; };
-		F990588B73CAA5297C620BAE /* libPods-base_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D328EDFD6510CB7E51DA3D99 /* libPods-base_.a */; };
 		F99A092E86FD44999E4594B9 /* DMSans_36pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A532536E241F4DF58013EAD0 /* DMSans_36pt-Medium.ttf */; };
 		FC04D5F3025845F68C239790 /* DMSans_24pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4388D6F8B40541319CE55045 /* DMSans_24pt-Regular.ttf */; };
 		FCE39A5B82294C0CB0B55D22 /* DMSans_36pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A96FDDE0653D42B6BBDDF399 /* DMSans_36pt-BoldItalic.ttf */; };
@@ -142,11 +140,8 @@
 		28E0AEE033C44C7EAC0FBC5F /* DMSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ExtraLight.ttf"; path = "../app/assets/fonts/DMSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 		2BC12DAE6104443487245D5B /* DMSans_24pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_24pt-ExtraLightItalic.ttf"; path = "../app/assets/fonts/DMSans_24pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		2C3612366C6D4D79861339C0 /* DMSans_36pt-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_36pt-SemiBold.ttf"; path = "../app/assets/fonts/DMSans_36pt-SemiBold.ttf"; sourceTree = "<group>"; };
-		2C434C1FAA9B64C6F407180D /* Pods-base_.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-base_.release.xcconfig"; path = "Target Support Files/Pods-base_/Pods-base_.release.xcconfig"; sourceTree = "<group>"; };
 		2DF889DACF9E4973A4459579 /* DMSans_18pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-SemiBoldItalic.ttf"; path = "../app/assets/fonts/DMSans_18pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		3050A92D2E4DCE1AEDD631FD /* libPods-base_-base_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-base_-base_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABBE945EB6B4BA391E8607E /* DMSans_36pt-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_36pt-Bold.ttf"; path = "../app/assets/fonts/DMSans_36pt-Bold.ttf"; sourceTree = "<group>"; };
-		3D793C222C4E58089B11AA19 /* Pods-base_.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-base_.debug.xcconfig"; path = "Target Support Files/Pods-base_/Pods-base_.debug.xcconfig"; sourceTree = "<group>"; };
 		41DFDE99574A4316933AB31B /* DMSans_18pt-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-BoldItalic.ttf"; path = "../app/assets/fonts/DMSans_18pt-BoldItalic.ttf"; sourceTree = "<group>"; };
 		435386BC2B19E1AC001DB3DE /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		435386BD2B19E1AC001DB3DE /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
@@ -178,7 +173,6 @@
 		67DECD52759E4A228CC22DB5 /* DMSans-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ThinItalic.ttf"; path = "../app/assets/fonts/DMSans-ThinItalic.ttf"; sourceTree = "<group>"; };
 		697C49E436084A1BA0DAF07A /* DMSans_18pt-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-Thin.ttf"; path = "../app/assets/fonts/DMSans_18pt-Thin.ttf"; sourceTree = "<group>"; };
 		6B16637FD6D04890A04A56D9 /* DMSans_18pt-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-LightItalic.ttf"; path = "../app/assets/fonts/DMSans_18pt-LightItalic.ttf"; sourceTree = "<group>"; };
-		6CBF89C88448D2C755F41713 /* Pods-base_-base_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-base_-base_Tests.release.xcconfig"; path = "Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6D0A42575EFA49FA94F500F8 /* DMSans_18pt-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-Light.ttf"; path = "../app/assets/fonts/DMSans_18pt-Light.ttf"; sourceTree = "<group>"; };
 		6DBBC4A21AEE4D6A8DA6A1BE /* DMSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ExtraLightItalic.ttf"; path = "../app/assets/fonts/DMSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		70DA92A0A7D94E6896DEF6B4 /* DMSans_36pt-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_36pt-Italic.ttf"; path = "../app/assets/fonts/DMSans_36pt-Italic.ttf"; sourceTree = "<group>"; };
@@ -211,10 +205,8 @@
 		D10E200C1AB64048BBB80797 /* DMSans_18pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/DMSans_18pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		D1E8E44BA78244CB8A0B8560 /* DMSans_18pt-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-MediumItalic.ttf"; path = "../app/assets/fonts/DMSans_18pt-MediumItalic.ttf"; sourceTree = "<group>"; };
 		D243AF2B07C0490C92E48676 /* DMSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Thin.ttf"; path = "../app/assets/fonts/DMSans-Thin.ttf"; sourceTree = "<group>"; };
-		D328EDFD6510CB7E51DA3D99 /* libPods-base_.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-base_.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52F741944FF4CE28D32F452 /* DMSans_24pt-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_24pt-Bold.ttf"; path = "../app/assets/fonts/DMSans_24pt-Bold.ttf"; sourceTree = "<group>"; };
 		D7A927AC6DCF4D7F8B4F78AC /* DMSans_36pt-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_36pt-LightItalic.ttf"; path = "../app/assets/fonts/DMSans_36pt-LightItalic.ttf"; sourceTree = "<group>"; };
-		D81B462B46674C892608DF1F /* Pods-base_-base_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-base_-base_Tests.debug.xcconfig"; path = "Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D887F4155AE84AFE93937295 /* DMSans_18pt-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_18pt-Black.ttf"; path = "../app/assets/fonts/DMSans_18pt-Black.ttf"; sourceTree = "<group>"; };
 		E0E813413194476BB4781C1F /* DMSans_36pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_36pt-SemiBoldItalic.ttf"; path = "../app/assets/fonts/DMSans_36pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		E96090C0C043461B85192E02 /* DMSans_24pt-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans_24pt-LightItalic.ttf"; path = "../app/assets/fonts/DMSans_24pt-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -233,7 +225,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A593913517A66EDE09F193 /* libPods-base_-base_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +232,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F990588B73CAA5297C620BAE /* libPods-base_.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D328EDFD6510CB7E51DA3D99 /* libPods-base_.a */,
-				3050A92D2E4DCE1AEDD631FD /* libPods-base_-base_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -431,10 +419,6 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3D793C222C4E58089B11AA19 /* Pods-base_.debug.xcconfig */,
-				2C434C1FAA9B64C6F407180D /* Pods-base_.release.xcconfig */,
-				D81B462B46674C892608DF1F /* Pods-base_-base_Tests.debug.xcconfig */,
-				6CBF89C88448D2C755F41713 /* Pods-base_-base_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -446,12 +430,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "base_Tests" */;
 			buildPhases = (
-				82AE7977ED41647BB5366351 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				7C4C8D445029ABEACA722D7F /* [CP] Embed Pods Frameworks */,
-				0B35871336276A6EA2FF50B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -467,14 +448,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "base_" */;
 			buildPhases = (
-				97C295B6A030EEA5AECE6761 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				20E90C706DC09AE36E761594 /* [CP] Embed Pods Frameworks */,
-				D860D074D4DAA63E9F5E8358 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -648,118 +626,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		0B35871336276A6EA2FF50B5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20E90C706DC09AE36E761594 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_/Pods-base_-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_/Pods-base_-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-base_/Pods-base_-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C4C8D445029ABEACA722D7F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-base_-base_Tests/Pods-base_-base_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82AE7977ED41647BB5366351 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-base_-base_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97C295B6A030EEA5AECE6761 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-base_-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D860D074D4DAA63E9F5E8358 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_/Pods-base_-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-base_/Pods-base_-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-base_/Pods-base_-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -812,7 +678,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D81B462B46674C892608DF1F /* Pods-base_-base_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -839,7 +704,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CBF89C88448D2C755F41713 /* Pods-base_-base_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -863,7 +727,6 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D793C222C4E58089B11AA19 /* Pods-base_.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -890,7 +753,6 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C434C1FAA9B64C6F407180D /* Pods-base_.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
