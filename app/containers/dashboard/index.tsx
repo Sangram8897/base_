@@ -6,14 +6,14 @@ import themes from 'appearance/theme'
 import useTheme from 'hooks/useTheme';
 
 import { DashboardStatistics, HomeCarousel, UpcomingActivities, PipeLineProgress } from './comp';
-
+import Config from "react-native-config";
 const Dashboard = ({ navigation }) => {
   const { themeColors, Layout, Common } = useTheme()
 
   return (
     <Container >
       <Header
-        headerTitle={'Dashboard'}
+        headerTitle={Config.API_URL}
       />
       <View style={Common.innerContainer}>
 
