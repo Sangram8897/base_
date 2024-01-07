@@ -8,16 +8,19 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "build-staging":"cp ./.env.staging ./.env && npx react-native run-android",
-    "build-prod":"cp ./.env.prod ./.env && npx react-native run-android",
-    "release-staging":"cd android && ENVFILE=.env.staging ./gradlew assembleRelease",
-    "release-prod":"cd android && ENVFILE=.env.prod ./gradlew assembleRelease"
+    "build-staging": "cp ./.env.staging ./.env && npx react-native run-android",
+    "build-prod": "cp ./.env.prod ./.env && npx react-native run-android",
+    "release-staging": "cd android && ENVFILE=.env.staging ./gradlew assembleRelease",
+    "release-prod": "cd android && ENVFILE=.env.prod ./gradlew assembleRelease"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.11",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "@reduxjs/toolkit": "^1.9.7",
+    "appcenter": "5.0.0",
+    "appcenter-analytics": "5.0.0",
+    "appcenter-crashes": "5.0.0",
     "axios": "^1.6.2",
     "moment": "^2.29.4",
     "react": "18.2.0",
