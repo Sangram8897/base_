@@ -1,24 +1,24 @@
 workflows:
     react-native:
         name: React Native App
-        environment:
-            groups:
-                - magic_values
-            vars:
-                XCODE_WORKSPACE: "reactnativebaseproject.xcworkspace" 
-                XCODE_SCHEME: "reactnativebaseproject"
-            node: latest
-            xcode: latest
-            cocoapods: default
-        triggering:
-            events:
-                - push
-                - tag
-                - pull_request
-            branch_patterns:
-                - pattern: master
-                  include: true
-                  source: true
+        # environment:
+            # groups:
+            #     - magic_values
+            # vars:
+            #     XCODE_WORKSPACE: "reactnativebaseproject.xcworkspace" 
+            #     XCODE_SCHEME: "reactnativebaseproject"
+            # node: latest
+            # xcode: latest
+            # cocoapods: default
+        # triggering:
+        #     events:
+        #         - push
+        #         - tag
+        #         - pull_request
+        #     branch_patterns:
+        #         - pattern: master
+        #           include: true
+        #           source: true
         scripts:
             - npm install
             - npm react-native-asset
