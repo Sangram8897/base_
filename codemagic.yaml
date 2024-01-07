@@ -1,15 +1,57 @@
-scripts:
-    # ....
-  - name: Install npm dependencies
-    script: | 
-      npm install
-  - name: Set Android SDK location
-    script: | 
-      echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"
-  - name: Build Android release
-    script: | 
-      cd android
-      ./gradlew bundleRelease
-
-artifacts:
-  - android/app/build/outputs/**/*.aab
+workflows:
+    react-native:
+        name: React Native App
+        environment:
+            groups:
+                - magic_values
+            vars:
+                XCODE_WORKSPACE: "reactnativebaseproject.xcworkspace" 
+                XCODE_SCHEME: "reactnativebaseproject"
+            node: latest
+            xcode: latest
+            cocoapods: default
+        triggering:
+            events:
+                - push
+                - tag
+                - pull_request
+            branch_patterns:
+                - pattern: master
+                  include: true
+                  source: true
+        scripts:
+            - npm install
+            - npm react-native-asset
+            - echo "sdk.dir=$HOME/programs/android-sdk-macosx" > "$FCI_BUILD_DIR/android/local.properties"
+            - name: Set up keystore
+              script: |
+                    echo $FCI_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+                    cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+                    storePassword=$FCI_KEYSTORE_PASSWORD
+                    keyPassword=$FCI_KEY_PASSWORD
+                    keyAlias=$FCI_KEY_ALIAS
+                    storeFile=/tmp/keystore.keystore
+                    EOF                     
+            - |
+                # build Android
+                cd android
+                ./gradlew assembleRelease
+            - |
+                # # build ios
+                # cd ios
+                # pod install
+                # xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+        artifacts:
+            - android/app/build/outputs/**/*.apk
+            - build/ios/ipa/*.ipa
+            - /tmp/xcodebuild_logs/*.log
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+        publishing:
+          # See the following link for details about email publishing - https://docs.codemagic.io/publishing-yaml/distribution/#email
+            email:
+                recipients:
+                    - sangrampaste8897@gmail.com
+                notify:
+                    success: true   # To not receive a notification when a build succeeds
+                    failure: true   # To not receive a notification when a build fails
