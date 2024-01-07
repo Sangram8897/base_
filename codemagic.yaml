@@ -21,7 +21,7 @@ workflows:
         #           source: true
         scripts:
             - npm install
-            - npm react-native-asset
+            - npx react-native-asset
             - echo "sdk.dir=$HOME/programs/android-sdk-macosx" > "$FCI_BUILD_DIR/android/local.properties"
             - name: Set up keystore
               script: |
