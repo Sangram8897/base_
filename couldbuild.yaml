@@ -1,0 +1,23 @@
+steps:
+  # Step 1: Install dependencies
+  - name: node
+    entrypoint: npm
+    args: ['install']
+
+  # Step 2: Build React Native project
+  - name: node
+    entrypoint: npx
+    args: ['react-native', 'bundle', '--platform', 'android', '--dev', 'false', '--entry-file', 'index.js', '--bundle-output', 'android/app/src/main/assets/index.android.bundle', '--assets-dest', 'android/app/src/main/res']
+
+  # Step 3: Build Android APK
+  - name: gcr.io/cloud-builders/gradle
+    args: ['assembleRelease']
+
+  # Step 4: Copy the APK to artifacts directory
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['cp', 'app/build/outputs/apk/release/app-release.apk', 'gs://your-bucket-name/your-app-name/$SHORT_SHA/']
+
+# # Optional: specify substitutions
+# substitutions:
+#   _BUCKET_NAME: your-bucket-name
+#   _APP_NAME: your-app-name
