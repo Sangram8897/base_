@@ -7,29 +7,7 @@ steps:
   # Step 2: Build React Native project
   - name: node
     entrypoint: npx
-    args: ['react-native', 'bundle', '--platform', 'android', '--dev', 'false', '--entry-file', 'index.js', '--bundle-output', 'android/app/src/main/assets/index.android.bundle', '--assets-dest', 'android/app/src/main/res']
-
-# Build APK with Gradle Image from mounted /persistent_volume using name: vol1
-  - name: 'gcr.io/cloud-builders/docker'
-    volumes:
-    - name: 'vol1'
-      path: '/persistent_volume'
-    args: ['run', '-v', 'vol1:/home/app', '--rm', 'gcr.io/fullstackgcp/gradle', '/bin/sh', '-c', 'cd /home/app && ./gradlew clean assembleDebug']
-  # Push the APK Output from vol1 to your GCS Bucket with Short Commit SHA.
-  - name: 'gcr.io/cloud-builders/gsutil'
-    volumes:
-    - name: 'vol1'
-      path: '/persistent_volume'
-    args: ['cp', '/persistent_volume/app/build/outputs/apk/debug/app-debug.apk', 'gs://fullstackgcp-apk-builds/app-debug-$SHORT_SHA.apk']
-  # Step 3: Build Android APK
-  - name: gcr.io/cloud-builders/gradle
-    args: ['assembleRelease']
-
-  # Step 4: Copy the APK to artifacts directory
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'app/build/outputs/apk/release/app-release.apk', 'gs://your-bucket-name/your-app-name/$SHORT_SHA/']
-
-# # Optional: specify substitutions
-# substitutions:
-#   _BUCKET_NAME: your-bucket-name
-#   _APP_NAME: your-app-name
+    args: ['react-native','react-native asset', 'bundle', '--platform', 'android', '--dev', 'false', '--entry-file', 'index.js', '--bundle-output', 'android/app/src/main/assets/index.android.bundle', '--assets-dest', 'android/app/src/main/res']
+  - run: npx react-native asset    
+  - run: cd android && ./gradlew clean
+     
